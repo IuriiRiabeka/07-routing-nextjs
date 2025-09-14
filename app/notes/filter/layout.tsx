@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
 
+
 import css from "../LayoutNotes.module.css";
 
 export default function FilterLayout({
-  children,
-  modal, 
+  children
 }: {
   children: ReactNode;
-  modal: ReactNode;
+  
 }) {
   return (
     <div className={css.container}>
@@ -18,7 +18,7 @@ export default function FilterLayout({
       </main>
 
       
-      {modal}
+      
     </div>
   );
 }
