@@ -1,6 +1,7 @@
 import axios  from 'axios';
 import type { AxiosResponse } from 'axios';
 import { Note, NoteInput } from '@/types/note';
+import type { NoteTag } from '@/types/note';
 axios.defaults.baseURL = "https://notehub-public.goit.study/api";
 axios.defaults.headers.common["Authorization"] = `Bearer ${process.env.NEXT_PUBLIC_NOTEHUB_TOKEN}`;
 
@@ -9,6 +10,7 @@ export interface FetchNotesParams {
   page?: number;
   perPage?: number;
   search?: string;
+  tag?: NoteTag;
 }
 
 export interface FetchNotesResponse {

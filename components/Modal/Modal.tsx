@@ -8,7 +8,7 @@ export interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
   children: React.ReactNode;
-  onCancel?: () => void; // Optional onCancel prop
+  onCancel?: () => void; 
 }
 
 export default function Modal({ isOpen, onClose, children }: ModalProps) {

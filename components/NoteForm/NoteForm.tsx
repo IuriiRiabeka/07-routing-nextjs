@@ -22,6 +22,7 @@ const validationSchema = Yup.object({
 interface NoteFormProps {
   
   onCancel: () => void;
+  onSubmit?: (note: NoteInput) => void;
   
   
 
