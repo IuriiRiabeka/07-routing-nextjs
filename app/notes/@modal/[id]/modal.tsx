@@ -1,7 +1,8 @@
+"use client";
 import Modal from "@/components/Modal/Modal";
-import NoteDetail from "./page";
+
 import { fetchNoteById } from "@/lib/api";
-import type { Note } from "@/types/note";
+
 import NotePreviewModal from "@/components/NotePreviewModal";
 
 
