@@ -13,9 +13,9 @@ export default function FilterLayout({
     <div className={css.container}>
      
 
-      <main className={css.notesWrapper}>
+      <div className={css.notesWrapper}>
         {children}
-      </main>
+      </div>
 
       
       
